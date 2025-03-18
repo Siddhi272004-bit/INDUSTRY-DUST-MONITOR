@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    height: 150%;
+    width: 250px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .air-quality {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .location-finder {
+    background: linear-gradient(135deg, #00c6fb, #005bea);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  #map {
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  #locationInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e3c72;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #2a5298;
+  }
+  
+  .pollutants {
+    width: 80vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .pollutants ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pollutants ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
