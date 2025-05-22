@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Ensure the incoming page is hidden initially */
+/* Hide only the incoming page during the transition */
+[data-router-view].incoming {
+    visibility: hidden;
+}
+
+/* Ensure the body has no overflow during the transition */
+body {
+    overflow: hidden;
+}
+
+/* Hide the background image during the transition */
+.hide-bg {
+    background-image: none !important;
+}
+
+.content a {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block; /* Ensure the link is visible */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    background-image: url('factory.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 80px;
+    gap: 60px;
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-weight: 100;
+}
+
+
+.title {
+    margin-top: 100px;
+    margin-left: 80px;
+    font-size: 7.5rem;
+    color: aliceblue;
+    font-weight: 1000;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 650px;
+}
+
+#lgn-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#lgn-btn:hover {
+    transform: scale(1.1); 
+}
