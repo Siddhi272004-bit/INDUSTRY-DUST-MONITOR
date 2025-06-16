@@ -1,0 +1,40 @@
+.contact-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  color: white;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5aa5af;
+}
+
+.card-contact {
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-contact:hover {
+  transform: translateY(-4px);
+  background-color: #3b3b3b;
+}
+
+.card-contact h4 {
+  margin-bottom: 10px;
+  color: #bda96b;
+}
+
+.card-contact p,
+.card-contact a {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+}
