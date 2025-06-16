@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="first_style.css">
+</head>
+<body data-router-wrapper>
+    <div class="content">
+        <div data-router-view="first">
+            <a href="main.html" data-router-link>HOME</a>
+        </div>
+        <p>ABOUT</p>
+        <div id="login_register">
+            <p>LOGIN</p>
+            <button id="lgn-btn" onclick="window.location.href='login.html'">
+                <img src="lgn.png" alt="Login Icon" height="35px" width="40px">
+            </button>  
+            <button id="register" onclick="window.location.href='register.html'">REGISTER</button>    
+        </div>
+        
+    </div>
+    <div class="title">
+        <p>DUST</p>
+        <p>COLLECTOR</p>
+    </div>
+
+    <!-- Load your custom script as a module -->
+    <!-- <script type="module" src="first.js"></script> -->
+</body>
+</html>
