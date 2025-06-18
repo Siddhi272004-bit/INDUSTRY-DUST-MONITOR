@@ -1,9 +1,9 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/Dashboard/public/first.html" }
+    { "source": "/", "destination": "/first.html" }
   ],
   "redirects": [
-    { "source": "/login", "destination": "/Dashboard/public/.html", "permanent": false },
-    { "source": "/register", "destination": "/Dashboard/public/.html", "permanent": false }
+    { "source": "/login", "destination": "/login.html", "permanent": false },
+    { "source": "/register", "destination": "/register.html", "permanent": false }
   ]
 }
