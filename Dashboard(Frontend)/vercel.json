@@ -1,7 +1,9 @@
 {
-  "version": 2,
   "rewrites": [
-    { "source": "/",         "destination": "/first.html" },
-    { "source": "/api/:path*", "destination": "https://<YOUR_RENDER_URL>/:path*" }
+    { "source": "/", "destination": "/Dashboard/public/first.html" }
+  ],
+  "redirects": [
+    { "source": "/login", "destination": "/Dashboard/public/.html", "permanent": false },
+    { "source": "/register", "destination": "/Dashboard/public/.html", "permanent": false }
   ]
 }
