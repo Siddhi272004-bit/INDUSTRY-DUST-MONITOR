@@ -6,6 +6,7 @@ import L from 'leaflet';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+import LoginPromptModal from "./LoginPromptModal";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -121,11 +122,13 @@ function Dashboard() {
 
 
   return (
-    <Container className="text-center my-4">
+    <>
+    <LoginPromptModal />
+    <Container className="text-center my-4" style={{backgroundColor: "#15191E"}}>
       {/* First Row: Map + AQI Summary */}
       <Row className="justify-content-center mb-3">
         <Col md={8} className="mx-1 my-1">
-          <Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }} className="text-light">
+          <Card style={{ backgroundColor: "#212931" }} className="text-light">
             <Card.Header>Air Quality Map</Card.Header>
             <Card.Body>
               <Form className="mb-3 d-flex justify-content-center">
@@ -161,7 +164,7 @@ function Dashboard() {
         </Col>
 
         <Col md={3} className="mx-2" style={{marginTop: "140px"}}>
-        <Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }} className="text-light h-80">
+        <Card style={{ backgroundColor: "#212931" }} className="text-light h-80">
             <Card.Header>Air Quality Index</Card.Header>
             <Card.Body className="d-flex flex-column justify-content-center align-items-center">
             {airQuality ? (
@@ -204,7 +207,7 @@ function Dashboard() {
             { label: "O₃", value: pollutants.o3, icon: "bi bi-cloud-sun-fill" },
           ].map((pollutant, index) => (
             <Col key={index} xs={0.1} md={4} className="mx-1 my-2">
-              <Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }} className="text-light">
+              <Card style={{ backgroundColor: "#222A30" }} className="text-light">
                 <Card.Body className="d-flex align-items-center justify-content-center">
                   <i className={`${pollutant.icon} me-2`}></i>
                   {pollutant.label}: {pollutant.value}
@@ -214,7 +217,10 @@ function Dashboard() {
           ))}
       </Row>
     </Container>
+    </>
   );
 }
 
 export default Dashboard;
+
+
