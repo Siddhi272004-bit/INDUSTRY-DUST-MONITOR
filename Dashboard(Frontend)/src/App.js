@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <div className="d-flex">
+      <div className="d-flex" style={{backgroundColor: "#15191E"}}>
         <Sidebar />
         <div className="flex-grow-1 p-3 bg-dark text-light" style={{ minHeight: "100vh", position: "relative" }}>
           <Routes>
