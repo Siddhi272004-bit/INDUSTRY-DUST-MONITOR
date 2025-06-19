@@ -2,7 +2,7 @@
   max-width: 700px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: #15191E;
   border-radius: 12px;
   color: white;
 }
@@ -14,7 +14,7 @@
 }
 
 .card-contact {
-  background-color: #2e2e2e;
+  background-color: #1C2025;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
@@ -38,3 +38,4 @@
   font-size: 16px;
   text-decoration: none;
 }
+
