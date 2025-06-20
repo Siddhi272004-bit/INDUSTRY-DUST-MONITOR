@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const User = require("./models/User"); // Adjust path based on your project structure
+const User = require("./User"); // Adjust path based on your project structure
 
 mongoose.connect("mongodb+srv://s51741248:h2ZNgA7GILexRGbN@cluster0.82ebe.mongodb.net/dustcollector?retryWrites=true&w=majority&appName=Cluster0&ssl=true", {
   useNewUrlParser: true,
